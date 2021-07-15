@@ -1,0 +1,14 @@
+<div class="container m-auto p-5">
+    <div class="row">
+        <div class="container">
+            <div class="border border-secondary" *ngFor="let question of questions; let i = index">
+                <p class="bg-dark p-2">{{ i+1}}: {{ question.question }}</p>
+                <div class="p-2" *ngFor="let answer of question.answers; let j = index">
+                    <input type="radio" value="{{j+1}}" id="answer{{ j+1 }}" [(ngModel)]="answers[i]" (click)="test()"> {{ answer }}
+                </div>
+            </div>
+        </div>
+
+        -->
+    </div>
+</div>
